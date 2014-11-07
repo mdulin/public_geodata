@@ -621,7 +621,7 @@
         "Id": 0,
         "MAP_ID": 22,
         "PROJ_NAME": "Deer Island (Little Sioux)",
-        "PUB_MEDIA": "YES"
+        "PUB_MEDIA": "NO"
       },
       "geometry": {
         "type": "Point",
@@ -797,7 +797,7 @@
         "Id": 0,
         "MAP_ID": 64,
         "PROJ_NAME": "St Helena Bend",
-        "PUB_MEDIA": "YES"
+        "PUB_MEDIA": "NO"
       },
       "geometry": {
         "type": "Point",
