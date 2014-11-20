@@ -790,6 +790,6 @@
 { "type": "Feature", "properties": { "OBJECTID": 23186, "DISTANCE": 501.000000, "RIVER_CODE": "Missouri", "X": 0.000000, "Y": 0.000000, "RIVER_MILE": "501" }, "geometry": { "type": "Point", "coordinates": [ -95.411070829398, 40.093051156511656 ] } },
 { "type": "Feature", "properties": { "OBJECTID": 23196, "DISTANCE": 500.000000, "RIVER_CODE": "Missouri", "X": 0.000000, "Y": 0.000000, "RIVER_MILE": "500" }, "geometry": { "type": "Point", "coordinates": [ -95.407873643836624, 40.078585700132287 ] } },
 { "type": "Feature", "properties": { "OBJECTID": 23206, "DISTANCE": 499.000000, "RIVER_CODE": "Missouri", "X": 0.000000, "Y": 0.000000, "RIVER_MILE": "499" }, "geometry": { "type": "Point", "coordinates": [ -95.417311563579261, 40.067256647551112 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 23216, "DISTANCE": 498.000000, "RIVER_CODE": "Missouri", "X": 0.000000, "Y": 0.000000, "RIVER_MILE": "498" }, "geometry": { "type": "Point", "coordinates": [ -95.421118626747315, 40.053325648457935 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 23216, "DISTANCE": 498.000000, "RIVER_CODE": "Missouri", "X": 0.000000, "Y": 0.000000, "RIVER_MILE": "498" }, "geometry": { "type": "Point", "coordinates": [ -95.421118626747315, 40.053325648457935 ] } }
 ]
 }
