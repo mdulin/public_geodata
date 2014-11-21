@@ -461,7 +461,7 @@
         "Id": 0,
         "MAP_ID": 10,
         "PROJ_NAME": "Boyer Chute",
-        "PUB_MEDIA": "YES"
+        "PUB_MEDIA": "NO"
       },
       "geometry": {
         "type": "Point",
