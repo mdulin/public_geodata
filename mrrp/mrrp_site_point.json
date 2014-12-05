@@ -1,6 +1,5 @@
 {
 "type": "FeatureCollection",
-                                                                                
 "features": [
 { "type": "Feature", "properties": { "Id": 0, "MAP_ID": 16, "PROJ_NAME": "Columbia Bottom", "PUB_MEDIA": "YES" }, "geometry": { "type": "Point", "coordinates": [ -10035613.435843969, 4694229.4532275246 ] } },
 { "type": "Feature", "properties": { "Id": 0, "MAP_ID": 25, "PROJ_NAME": "Eagle Bluffs", "PUB_MEDIA": "YES" }, "geometry": { "type": "Point", "coordinates": [ -10286620.570827618, 4696961.8600621978 ] } },
