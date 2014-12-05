@@ -1175,6 +1175,25 @@
         ]
       }
     },
+               
+{ 
+        "type": "Feature", 
+        "properties": {
+        "Id": 0, 
+        "MAP_ID": 85, 
+        "PROJ_NAME": "Cottier Bend", 
+        "PUB_MEDIA": "YES" 
+        }, 
+        "geometry": { 
+        "type": "Point", 
+        "coordinates": [ 
+              -10624414.191548705,
+                4887465.0096018175 
+        ] 
+      } 
+    }
+  ]
+},
     {
       "type": "Feature",
       "properties": {
