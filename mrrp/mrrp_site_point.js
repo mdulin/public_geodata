@@ -1,4 +1,5 @@
-var mrrp_site_points = {
+var mrrp_site_points = function(){
+    var ret = {
   "type": "FeatureCollection",
   "crs": {
     "type": "name",
@@ -1209,4 +1210,5 @@ var mrrp_site_points = {
     }
   ]
 }
-;
+  return ret;
+}

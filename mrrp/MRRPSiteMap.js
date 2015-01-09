@@ -9952,7 +9952,6 @@ var RM_style={
 
 var RM_Label_style ={
 	fillColor: "#FFFFFF"
-
 }
 
 var poly_style={
@@ -9992,11 +9991,11 @@ map.on('zoomend', function(){
 
 
 
-// $.ajax({
-//   dataType: "json",
-//   url: 'http://usace-mmc.github.io/public_geodata/mrrp/mrrp_site_point.json',
-//     success: function(data){
-// 			mrrp_site_points=data;
+$.ajax({
+  dataType: "json",
+  url: 'https://cdn.rawgit.com/USACE-MMC/public_geodata/858072d27447e27afe7f78bc8ccbb6105d433730/mrrp/mrrp_site_point.json',
+    success: function(data){
+			mrrp_site_points=data;
 			mrrp_site_points_lyr = L.geoJson(mrrp_site_points,{
 			pointToLayer: function (feature, latlng) {
 							return L.circleMarker(latlng, point_style);
@@ -10016,14 +10015,14 @@ map.on('zoomend', function(){
 
 			mrrp_site_points_lyr.addTo(map);
 
-//       }
-// });
+       }
+});
 
-// $.ajax({
-//   dataType: "json",
-//   url: 'http://usace-mmc.github.io/public_geodata/mrrp/mrrp_site_area.json',
-//     success: function(data){
-// 			mrrp_site_area=data;
+$.ajax({
+  dataType: "json",
+  url: 'https://cdn.rawgit.com/USACE-MMC/public_geodata/811463cf866593a7fd7db6a618bb60450998fbb9/mrrp/mrrp_site_area.json',
+    success: function(data){
+			mrrp_site_area=data;
 			mrrp_site_area_lyr = L.geoJson(mrrp_site_area, {style: poly_style,
 				onEachFeature: function (feature, layer) {
 
@@ -10056,15 +10055,15 @@ map.on('zoomend', function(){
 										});
 									}
 							}
-// }
+}
 
-// });
+});
 
-// $.ajax({
-// 	dataType: "json",
-// 	url: 'http://usace-mmc.github.io/public_geodata/mrrp/RM_10mi.json',
-// 			success: function (data){
-// 				RM_10mi=data;
+$.ajax({
+	dataType: "json",
+	url: 'https://cdn.rawgit.com/USACE-MMC/public_geodata/master/mrrp/RM_10mi.json',
+			success: function (data){
+				RM_10mi=data;
 				RM_10mi_lyr = L.geoJson(RM_10mi,{
 					pointToLayer: function (feature, latlng) {
 							return L.circleMarker(latlng, RM_style)
@@ -10084,15 +10083,15 @@ map.on('zoomend', function(){
 					});
 				});
 
-// 			}
+			}
 
-// });
+});
 
-// $.ajax({
-// 	dataType: "json",
-// 	url: 'http://usace-mmc.github.io/public_geodata/mrrp/RM_1mi.json',
-// 			success: function (data){
-// 				RM_1mi=data;
+$.ajax({
+	dataType: "json",
+	url: 'https://cdn.rawgit.com/USACE-MMC/public_geodata/3c9f8a5cf1049c8ef7f111e3ae8226a48f566e14/mrrp/RM_1mi.json',
+			success: function (data){
+				RM_1mi=data;
 				RM_1mi_lyr = L.geoJson(RM_1mi,{
 			pointToLayer: function (feature, latlng) {
 							return L.circleMarker(latlng, RM_style);
@@ -10113,9 +10112,9 @@ map.on('zoomend', function(){
 
 
 
-// 		}
+		}
 
-// });
+});
 
 
 
