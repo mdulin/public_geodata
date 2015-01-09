@@ -9992,11 +9992,11 @@ map.on('zoomend', function(){
 
 
 
-$.ajax({
-  dataType: "json",
-  url: 'http://usace-mmc.github.io/public_geodata/mrrp/mrrp_site_point.json',
-    success: function(data){
-			mrrp_site_points=data;
+// $.ajax({
+//   dataType: "json",
+//   url: 'http://usace-mmc.github.io/public_geodata/mrrp/mrrp_site_point.json',
+//     success: function(data){
+// 			mrrp_site_points=data;
 			mrrp_site_points_lyr = L.geoJson(mrrp_site_points,{
 			pointToLayer: function (feature, latlng) {
 							return L.circleMarker(latlng, point_style);
@@ -10016,14 +10016,14 @@ $.ajax({
 
 			mrrp_site_points_lyr.addTo(map);
 
-       }
-});
+//       }
+// });
 
-$.ajax({
-  dataType: "json",
-  url: 'http://usace-mmc.github.io/public_geodata/mrrp/mrrp_site_area.json',
-    success: function(data){
-			mrrp_site_area=data;
+// $.ajax({
+//   dataType: "json",
+//   url: 'http://usace-mmc.github.io/public_geodata/mrrp/mrrp_site_area.json',
+//     success: function(data){
+// 			mrrp_site_area=data;
 			mrrp_site_area_lyr = L.geoJson(mrrp_site_area, {style: poly_style,
 				onEachFeature: function (feature, layer) {
 
@@ -10056,15 +10056,15 @@ $.ajax({
 										});
 									}
 							}
-}
+// }
 
-});
+// });
 
-$.ajax({
-	dataType: "json",
-	url: 'http://usace-mmc.github.io/public_geodata/mrrp/RM_10mi.json',
-			success: function (data){
-				RM_10mi=data;
+// $.ajax({
+// 	dataType: "json",
+// 	url: 'http://usace-mmc.github.io/public_geodata/mrrp/RM_10mi.json',
+// 			success: function (data){
+// 				RM_10mi=data;
 				RM_10mi_lyr = L.geoJson(RM_10mi,{
 					pointToLayer: function (feature, latlng) {
 							return L.circleMarker(latlng, RM_style)
@@ -10084,15 +10084,15 @@ $.ajax({
 					});
 				});
 
-			}
+// 			}
 
-});
+// });
 
-$.ajax({
-	dataType: "json",
-	url: 'http://usace-mmc.github.io/public_geodata/mrrp/RM_1mi.json',
-			success: function (data){
-				RM_1mi=data;
+// $.ajax({
+// 	dataType: "json",
+// 	url: 'http://usace-mmc.github.io/public_geodata/mrrp/RM_1mi.json',
+// 			success: function (data){
+// 				RM_1mi=data;
 				RM_1mi_lyr = L.geoJson(RM_1mi,{
 			pointToLayer: function (feature, latlng) {
 							return L.circleMarker(latlng, RM_style);
@@ -10113,9 +10113,9 @@ $.ajax({
 
 
 
-		}
+// 		}
 
-});
+// });
 
 
 
