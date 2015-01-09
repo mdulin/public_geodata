@@ -9951,7 +9951,7 @@ var RM_style={
 }
 
 var RM_Label_style ={
-	fillColor: "#FFFFFF",
+	fillColor: "#FFFFFF"
 
 }
 
