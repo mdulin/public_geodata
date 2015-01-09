@@ -9896,7 +9896,7 @@ L.control.groupedLayers = function (baseLayers, groupedOverlays, options) {
 
 $(document).ready(function(){
 
-var map = L.map('map').setView([40, -96], 7);
+var map = L.map('map').setView([40, -93], 5);
 var mrrp_site_points, mrrp_site_area, mrrp_site_points_lyr, mrrp_site_area_lyr, RM_1mi, RM_1mi_lyr, RM_10mi, RM_10mi_lyr;
 var markers;
 
