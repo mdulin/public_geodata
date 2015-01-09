@@ -10067,7 +10067,7 @@ $.ajax({
 				RM_10mi_lyr = L.geoJson(RM_10mi,{
 					pointToLayer: function (feature, latlng) {
 							return L.circleMarker(latlng, RM_style)
-					},
+					}
 				});
 
 				RM_10mi_lyr.eachLayer (function(l) {
@@ -10093,9 +10093,9 @@ $.ajax({
 			success: function (data){
 				RM_1mi=data;
 				RM_1mi_lyr = L.geoJson(RM_1mi,{
-			pointToLayer: function (feature, latlng) {
+			       pointToLayer: function (feature, latlng) {
 							return L.circleMarker(latlng, RM_style);
-					},
+					}
 
 				});
 
