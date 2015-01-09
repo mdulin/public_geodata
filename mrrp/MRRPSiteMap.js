@@ -9989,11 +9989,12 @@ map.on('zoomend', function(){
   showLayerWhen(4,RM_1mi_lyr, zoomVal >12);
 });
 
-
+$.support.cors = true;
+$.ajaxSetup({cache:false});
 
 $.ajax({
   dataType: "json",
-  url: 'https://cdn.rawgit.com/USACE-MMC/public_geodata/858072d27447e27afe7f78bc8ccbb6105d433730/mrrp/mrrp_site_point.json',
+  url: 'http://cdn.rawgit.com/USACE-MMC/public_geodata/858072d27447e27afe7f78bc8ccbb6105d433730/mrrp/mrrp_site_point.json',
     success: function(data){
 			mrrp_site_points=data;
 			mrrp_site_points_lyr = L.geoJson(mrrp_site_points,{
@@ -10020,7 +10021,7 @@ $.ajax({
 
 $.ajax({
   dataType: "json",
-  url: 'https://cdn.rawgit.com/USACE-MMC/public_geodata/811463cf866593a7fd7db6a618bb60450998fbb9/mrrp/mrrp_site_area.json',
+  url: 'http://cdn.rawgit.com/USACE-MMC/public_geodata/811463cf866593a7fd7db6a618bb60450998fbb9/mrrp/mrrp_site_area.json',
     success: function(data){
 			mrrp_site_area=data;
 			mrrp_site_area_lyr = L.geoJson(mrrp_site_area, {style: poly_style,
@@ -10061,7 +10062,7 @@ $.ajax({
 
 $.ajax({
 	dataType: "json",
-	url: 'https://cdn.rawgit.com/USACE-MMC/public_geodata/master/mrrp/RM_10mi.json',
+	url: 'http://cdn.rawgit.com/USACE-MMC/public_geodata/master/mrrp/RM_10mi.json',
 			success: function (data){
 				RM_10mi=data;
 				RM_10mi_lyr = L.geoJson(RM_10mi,{
@@ -10089,7 +10090,7 @@ $.ajax({
 
 $.ajax({
 	dataType: "json",
-	url: 'https://cdn.rawgit.com/USACE-MMC/public_geodata/3c9f8a5cf1049c8ef7f111e3ae8226a48f566e14/mrrp/RM_1mi.json',
+	url: 'http://cdn.rawgit.com/USACE-MMC/public_geodata/3c9f8a5cf1049c8ef7f111e3ae8226a48f566e14/mrrp/RM_1mi.json',
 			success: function (data){
 				RM_1mi=data;
 				RM_1mi_lyr = L.geoJson(RM_1mi,{
