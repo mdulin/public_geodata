@@ -10043,7 +10043,7 @@ $.ajax({
 							var P = getParameterByName('p').split(':')
 							var Pname = P[P.length -2]
 							var Pval = P[P.length -1]
-
+						setTimeout(function(){
 							if (Pname == 'MAP_SITE_ID') {
 								if (Pval != '') {
 									mrrp_site_area_lyr.eachLayer(function(l){
@@ -10056,6 +10056,7 @@ $.ajax({
 										});
 									}
 							}
+    },0);
 }
 
 });
